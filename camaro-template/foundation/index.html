@@ -1,0 +1,418 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+     
+    <link rel="stylesheet" href="css/app.css">
+    <style>
+    .owl-carousel .owl-item img {
+    height:auto;
+    width:100%;
+    display: block;
+}
+.owl-item {
+    float: left;
+}
+#events .owl-dots,
+#sponsors .owl-dots {
+    margin-top: 15px;
+}
+#sponsors .owl-nav {
+    margin-top: -10px;
+}
+.owl-carousel .item {
+    margin:0px;
+}
+.owl-item .item {
+    width: 100%;
+    height: 263px;
+    z-index: 1;
+}
+.owl-item {
+    height: 263px;
+    width: 100%;
+    float: left;
+}
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+}
+.owl-carousel .owl-stage {
+    position: relative;
+}
+
+.owl-nav {
+    margin-top: -30px;
+    margin-left: -80px;
+    margin-right: -80px;
+    width: calc(100% + 160px);
+    position: absolute;
+    top:50%;
+    z-index:300;
+}
+.owl-nav.disabled .owl-prev,
+.owl-nav.disabled .owl-next {
+    display: none;
+}
+.owl-theme .owl-nav .disabled {
+    opacity: .5;
+    cursor: default;
+}
+.owl-theme .owl-nav [class*=owl-] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+/* [ 10.7. Slider Pagination ] */
+
+.owl-dots {
+    text-align:center;
+    font-size:1px;
+    width:100%;
+    line-height:1;
+    margin:35px auto 0;
+    position: relative;
+}
+/*.container.popupslider.magnific-wrap {
+    margin: 0 auto;
+    padding: 55px 0;
+    width: 750px;
+}
+*/
+
+.owl-dots .owl-dot {
+    text-indent:-9999px;
+    height:10px;
+    width:10px;
+    display:inline-block;
+    vertical-align: middle;
+    background-color:#CCC;
+    border-radius:100%;
+    position:relative;
+    -webkit-transition:background-color .3s ease;
+    -ms-transition:background-color .3s ease;
+    transition:background-color .3s ease;
+    margin:0 5px;
+    overflow: hidden;
+}
+
+.owl-dots .owl-dot.active,
+.owl-dots .owl-dot:hover {
+    background-color:#E7543D;
+    width:12px;
+    height:12px;
+    margin:0 4px;
+}
+
+.owl-prev, 
+.owl-next {
+    width: 63px;
+    height: 63px;
+    display: block;
+    border: 1px solid transparent;
+    border-radius: 63px;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    top: 50%;
+    margin-top: -32px;
+    background-color: transparent;
+    -webkit-transition: border .3s ease;
+    -ms-transition: border .3s ease;
+    transition: border .3s ease;
+}
+.owl-next {
+    right: 0;
+}
+.owl-prev {
+    left: 0;
+}
+.owl-prev i,
+.owl-next i {
+    margin: 5px 0 0 1px;
+}
+.owl-prev:hover, .owl-next:hover {
+    border-color: #E7553E;
+}
+.orbit-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.9); }
+
+.orbit-caption p {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fefefe;
+  font-size: 48px;
+  font-weight: 900; }
+
+@media screen and (max-width: 39.9375em) {
+  .orbit-caption p {
+    font-size: 12px;
+    font-weight: 400; } }
+.orbit-bullets {
+  display: none; }
+</style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Welcome to Foundation</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="callout">
+          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
+          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
+          <p>Once you've exhausted the fun in this document, you should check out:</p>
+          <div class="row">
+            <div class="large-4 medium-4 columns">
+              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
+            </div>
+            <div class="large-4 medium-4 columns">
+              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
+            </div>
+            <div class="large-4 medium-4 columns">
+              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 medium-4 medium-push-2 columns">
+              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
+            </div>
+            <div class="large-4 medium-4 medium-pull-2 columns">
+              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-8 medium-8 columns">
+        <h5>Here&rsquo;s your basic grid:</h5>
+        <!-- Grid Example -->
+
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="primary callout">
+              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-6 medium-6 columns">
+            <div class="primary callout">
+              <p>Six columns</p>
+            </div>
+          </div>
+          <div class="large-6 medium-6 columns">
+            <div class="primary callout">
+              <p>Six columns</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="primary callout">
+              <p>Four columns</p>
+            </div>
+          </div>
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="primary callout">
+              <p>Four columns</p>
+            </div>
+          </div>
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="primary callout">
+              <p>Four columns</p>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
+        <form>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>Input Label</label>
+              <input type="text" placeholder="large-12.columns" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 medium-4 columns">
+              <label>Input Label</label>
+              <input type="text" placeholder="large-4.columns" />
+            </div>
+            <div class="large-4 medium-4 columns">
+              <label>Input Label</label>
+              <input type="text" placeholder="large-4.columns" />
+            </div>
+            <div class="large-4 medium-4 columns">
+              <div class="row collapse">
+                <label>Input Label</label>
+                <div class="input-group">
+                  <input type="text" placeholder="small-9.columns" class="input-group-field" />
+                  <span class="input-group-label">.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>Select Box</label>
+              <select>
+                <option value="husker">Husker</option>
+                <option value="starbuck">Starbuck</option>
+                <option value="hotdog">Hot Dog</option>
+                <option value="apollo">Apollo</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-6 medium-6 columns">
+              <label>Choose Your Favorite</label>
+              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
+              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+            </div>
+            <div class="large-6 medium-6 columns">
+              <label>Check these out</label>
+              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>Textarea Label</label>
+              <textarea placeholder="small-12.columns"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div id="sponsors" class="columns">
+            <div class="owl-carousel" style="height: 174px;">
+                    <div class="item"><a href="clients_1.html"><img src="../images/party.jpg" alt=""></a></div>
+                    <div class="item"><a href="clients_2.html"><img src="../images/expo.jpg" alt=""></a></div>
+                    <div class="item"><a href="clients_1.html"><img src="../images/bacon-ride.jpg" alt=""></a></div>
+                    <div class="item"><a href="clients_2.html"><img src="../images/pigtails.jpg" alt=""></a></div>
+                    <div class="item"><a href="clients_1.html"><img src="../images/party.jpg" alt=""></a></div>
+                    <div class="item"><a href="clients_2.html"><img src="../images/expo.jpg" alt=""></a></div>
+                    <div class="item"><a href="clients_1.html"><img src="../images/bacon-ride.jpg" alt=""></a></div>
+                    <div class="item"><a href="clients_2.html"><img src="../images/pigtails.jpg" alt=""></a></div>
+                </div>
+            </div>
+      </div>
+
+
+<div class="row collapse expanded">
+	<div class="small-12 medium-12 large-12 columns">
+		<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+  <ul class="orbit-container">
+    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+    <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+    <li class="is-active orbit-slide">
+      <img class="orbit-image" src="../images/pigtails.jpg" alt="Space">
+      <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+    </li>
+    <li class="orbit-slide">
+      <img class="orbit-image" src="../images/expo.jpg" alt="Space">
+      <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+    </li>
+    <li class="orbit-slide">
+      <img class="orbit-image" src="../images/bacon-ride.jpg" alt="Space">
+      <figcaption class="orbit-caption">Encapsulating</figcaption>
+    </li>
+    <li class="orbit-slide">
+      <img class="orbit-image" src="../images/party.jpg" alt="Space">
+      <figcaption class="orbit-caption">Outta This World</figcaption>
+    </li>
+  </ul>
+  <nav class="orbit-bullets">
+    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+    <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+  </nav>
+</div>
+	</div>	
+</div>
+
+
+
+
+
+
+
+      <div class="large-4 medium-4 columns">
+        <h5>Try one of these buttons:</h5>
+        <p><a href="#" class="button">Simple Button</a><br/>
+        <a href="#" class="success button">Success Btn</a><br/>
+        <a href="#" class="alert button">Alert Btn</a><br/>
+        <a href="#" class="secondary button">Secondary Btn</a></p>
+        <div class="callout">
+          <h5>So many components, girl!</h5>
+          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
+          <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="../js/OwlCarousel2-2.2.0/dist/owl.carousel.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#sponsors .owl-carousel, #events .owl-carousel').owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayHoverPause: true,
+            //autoplaySpeed: 3000,
+            //autoplayTimeout: 3000,
+            fluidSpeed: true,
+            nav: true,
+            margin: 30,
+            //autoWidth: true,
+            responsiveClass: true,
+            //slideBy: 'page',
+            responsive: {
+                0: {
+                    items: 2
+                },
+                576: {
+                    items: 3
+                },
+                992: {
+                    items: 5
+                }
+            }
+        });
+        $('.owl-prev').html('<i class="custom-icon custom-icon-arrow-prev"></i>');
+        $('.owl-next').html('<i class="custom-icon custom-icon-arrow-next"></i>');
+    })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Camaro</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <head>
+<style>
+.col-fixed-300 {
+    float: left;
+    height: 100%;
+    margin-left: 15px;
+    width: 300px;
+}
+.flexy {
+    float:left;
+    width: auto;
+    width: calc( 100% - 315px);
+}
+@media screen and (max-width:992px) {
+    .col-fixed-300 {
+        float: none;
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }  
+}
+@media screen and (max-width: 992px) {
+    .flexy {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
+
+.hp-title {
+    font:24px/30px 'Roboto Slab';color:rgb(74,74,74);margin:14px 0;padding:0;
+}
+.hp-img-holder {
+   max-width:100%;
+    height:230px;
+    overflow:hidden;
+}
+.hp-img-holder img {
+    height: auto;
+    width: 100%;  
+}
+.section-title {
+    color: #666;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+}
+.countdown-title {
+    font-size: 18px;
+    color:rgb(204,204,204);
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-bottom: 0;
+}
+.flexy img {
+    width: 100%;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="row">   
+        <h1 class="section-title">Latest Posts</h1>
+        <div class="flexy">
+            <div class="col-sm-6 col-xs-12">
+                <img src="images/announce.jpg">
+                <p class="text-left hp-title">Only 50 Days ’til the RAGBRAI Route Announcement Party!</p>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                <img src="images/hills.jpg">
+                <p class="text-left hp-title">Guess the Route Contest is Now Open for RAGBRAI XLV!</p>
+            </div>
+        </div>
+        
+        <!-- the poster ad -->
+        <div class="col-fixed-300 hidden-sm"><img src="images/ad.jpg"><div style="margin-top:20%;text-align:right;width:100%;"><a href="">More Blog Posts</a></div></div>
+        <div class="col-sm-12 visible-sm text-center"><img src="images/ad.jpg"><div style="text-align:right;margin-top:5%;width:100%;"><a href="">More Blog Posts</a></div></div>
+        <!-- end poster ad -->
+        
+    </div> 
+</div>
+<div class="col-xs-12 border-top">
+    <div class="container">
+        <div class="row">
+            <h1 class="section-title">Photos</h1>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+   <h1>Hello, world!</h1>
+   
+   <div class = "row">
+      <p>Before Ordering</p>
+      
+      <div class = "col-md-4" style="background:red">
+         I am on left
+      </div>
+      
+      <div class = "col-md-8">
+         
+         I am on right
+      </div>
+      
+   </div>
+	
+   <br>
+   
+   <div class = "row">
+      <p>After Ordering</p>
+      
+      <div class = "col-md-4 col-md-push-8" style = "background-color: #dedef8;">
+         
+         I was on left
+      </div>
+      
+      <div class = "col-md-8 col-md-pull-4" style = "background-color: red;">
+         I was on right
+      </div>
+		
+   </div>
+
+</div>
+</body>
+</html>

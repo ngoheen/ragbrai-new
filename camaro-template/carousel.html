@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Camaro</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Camaro - Responsive Multipurpose Template - v.1.0 -->
+<style>
+.owl-carousel {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+.owl-stage-outer,
+.owl-stage {
+    height: 480px;
+}
+.home .owl-carousel .owly {
+        float: left;
+    }
+.home .owl-carousel .owly,
+.home .owl-carousel .owl-item {
+    height: 480px;
+}
+@media (max-width: 768px) {
+    .bg {
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        content: '\0020';
+        height: 480px;
+    }
+    .my-about,
+    .my-two,
+    .my-three {
+        background-position: center 0;
+        background-size: contain;
+    }
+    .container.vmiddle {
+        height: 100% !important;
+        margin-top: 220px !important;
+        text-align: center;
+        width: 100%;
+    }
+    .owl-carousel,
+    .caroufredsel_wrapper,
+    .oneslider {
+        height: 620px !important;
+    }
+     .large-size {
+        height: 250px !important;
+    }
+    .arrow {
+        top: 25%;
+    }
+}
+
+</style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="home">
+                <!-- Main Carousel -->
+                <div class="owl-carousel">
+                  
+                    <div class="owly">
+                        <div class="bg my-three" style="height:100%"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 col-md-push-8">
+                                </div>
+                                </div>
+                                <div class="col-md-8 col-md-pull-4" style="height:100%">
+                                    <h1 class="slide-title">Catch our All-New RAGBRAI XLV Merchandise!</h1>
+                                    <p class="color-ccc">Sweatshirts, men's and women's tees, and long sleeve tees available now in the RAGBRAI Shop!</p>
+                                    <button type="button" class="btn btn-default btn-lg">Start Shopping</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="owly">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 col-md-push-8" style="height:100%">
+                            <div class="bg my-two"></div>
+                        </div>
+                                <div class="col-md-8 col-md-pull-4" style="height:100%">
+                                <h1 class="slide-title">All Aboard!</h1>
+                                <p class="color-ccc">Join us on our cruise from Missouri to Mississippi! Click the button, below, to get started!</p>
+                                <button type="button" class="btn btn-default btn-lg">Register Now</button>
+                            </div>
+                    </div> </div> </div>
+                    
+                    <div class="owly">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 col-md-push-8" style="height:100%">
+                                    <div class="my-three bg"></div>
+                                </div>
+                                <div class="col-md-8 col-md-pull-4" style="height:100%">
+                                    <h1 class="slide-title">Explore. Bike. Discover.</h1>
+                                    <p class="color-ccc">Introducing the 2017 RAGBRAI XLV Logo!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.plugins.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/OwlCarousel2-2.2.0/dist/owl.carousel.js"></script>
+        <script>
+         $('.home .owl-carousel').owlCarousel({
+            loop: true,
+            //autoplay: true,
+            items: 1,
+            dots: false,
+            nav: true,
+           // itemElement: 'li',
+            //stageElement: 'ul',
+            autoplayHoverPause: true,
+            autoplayTimeout: 10000,
+            autoplaySpeed: 2000,
+            slideBy: 'page',
+        });
+        </script>
+    </body>
+</html>

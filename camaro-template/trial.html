@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<style>
+	body {
+	    margin: 0;
+	    padding: 0;
+	}
+	.container.main {
+	    height: 480px;
+	    /*tablet: 705px;
+	    phone: 485px */
+	    margin: 20px auto;
+	    width: 100%;
+	    position: relative;
+	}
+	.container.main .row {
+	    height: 100%;
+	}
+.slide-img {
+    background-color:rgb(227,220,210);
+}
+ .bg {
+    background-image: url(slidethree.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+   /* width: 1024px !important;*/
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 2;
+}
+.slide-img {
+    background-color:rgb(227,220,210);height:100%
+}
+.slide-txt {
+    height:100%
+}
+/*
+@media screen and (max-width:767px) {
+    .container.main {
+        height: 705px;
+    }
+    .slide-img {
+        height: 475px;
+    }
+    
+}
+@media screen and (max-width:767px) {
+    .home .container .my-two.bg,
+    .home .container .my-three.bg,
+    .home .container .my-about.bg{
+        background-position: center top;
+    }
+}
+*/
+@media screen and (max-width: 992px) {
+    .slide-img,
+    .bg {
+        background-size: contain;
+        background-position: center top;
+        height: 100%;
+        }
+    .col-md-8  {
+        padding: 0;
+    }
+    .container-main {
+        height: 480px;
+    }
+    .slide-img {
+        height: auto;
+    }
+    .slide-txt {
+        text-align: center;
+    }
+    .container-main {
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .slide-txt {
+        text-align: center;
+    }
+    .bg,
+    .bg2,
+    .bg3 {
+        background-position: center top;
+        background-size: contain;
+    }
+}
+</style>
+</head>
+<body>
+<div class="container main">
+    <div class="row">
+        <div class="bg slide-img col-md-8 col-md-push-4">
+            <div class=""></div>
+        </div>
+         <div class="slide-txt col-md-4 col-md-pull-8">
+            <h1>The slide title</h1><p>paragraph</p>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/OwlCarousel2-2.2.0/dist/owl.carousel.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            nav: true,
+            navText: false,
+                margin: 0,
+                responsiveClass: true,
+                responsive: {
+                  0: {
+                    items: 1,
+                    nav: true
+                  },
+                  600: {
+                    items: 2,
+                    nav: true
+                  },
+                  1000: {
+                    items: 3,
+                    nav: true,
+                    margin: 0
+                  }
+                }
+              })
+            })
+          </script>
+
+</body>
+</html>
